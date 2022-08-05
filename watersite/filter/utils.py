@@ -2,9 +2,9 @@ from django.db.models import Count
 
 from .models import *
 
-menu = [{'title': "О сайте", 'url_name': 'about'},
-        {'title': "Добавить статью", 'url_name': 'add_page'},
-        {'title': "Обратная связь", 'url_name': 'contact'},
+menu = [{'title': "About us", 'url_name': 'about'},
+        {'title': "Add post", 'url_name': 'add_page'},
+        {'title': "Feedback", 'url_name': 'contact'},
         # {'title': "Войти", 'url_name': 'login'}
 ]
 
