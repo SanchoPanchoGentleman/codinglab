@@ -1,0 +1,21 @@
+{% extends 'filter/base.html' %}
+
+{% block content %}
+<h1>About this site</h1>
+<br>
+<h2>In this site you can find water purification filters for the sink of your home or in any other workplace.
+Filters will save you time and money, because everything will be at hand, and clean water will literally flow directly into your glass from the tap.</h2>
+<ul>
+    {% for p in posts %}
+    <li>
+        <h2> {{p.title}} </h2>
+        {% autoescape off %}
+        <p> {{p.content|linebreaks}} </p>
+        {% endautoescape %}
+        <hr>
+    </li>
+    {% endfor %}
+
+</ul>
+
+{% endblock %}
